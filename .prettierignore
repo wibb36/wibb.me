@@ -1,0 +1,33 @@
+# Ignore git directory
+.git
+
+# Ignore node_modules directory
+node_modules
+
+# Ignore build directory
+build
+
+# Ignore coverage reports
+coverage
+
+# Ignore logs and other generated files
+logs
+*.log
+*.swp
+.DS_Store
+*.env
+.env.local
+
+# Ignore static files
+public/**/*.png
+public/**/*.jpg
+public/**/*.jpeg
+public/**/*.gif
+public/**/*.svg
+
+# Ignore .next directory
+.next
+.vercel
+
+# Ignore .contentlayer directory
+.contentlayer
