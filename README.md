@@ -24,4 +24,4 @@ pnpm dev
 
 ## License
 
-Please review the [license](https://github.com/wibb36/wibb.me/blob/main/LICENSE.txt) and remove all of my personal information.
+Please review the [license](https://github.com/wibb36/wibb.me/blob/main/LICENSE) and remove all of my personal information.
