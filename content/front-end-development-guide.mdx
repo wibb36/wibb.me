@@ -1,0 +1,449 @@
+---
+title: 'Mastering Front-End Development: A Comprehensive Journey'
+publishedAt: '2020-02-02'
+summary: 'An in-depth exploration of my learnings over the years in constructing style guides, design systems, component libraries, and their associated best practices.'
+image: '/static/writing/style-guides-component-libraries-design-systems/banner.jpg'
+---
+
+Interested in **front-end development** but not sure where to begin? Look no further! In this article, I'll guide you through the essentials, from basics to advanced concepts.
+
+## Table of Contents
+
+1.  [What is Front-end development?](/writing/front-end-development-guide#what-is-front-end-development)
+2.  [What is a Style Guide?](/writing/front-end-development-guide#what-is-a-style-guide)
+3.  [What is a Component Library?](/writing/front-end-development-guide#what-is-a-component-library)
+4.  [What is a Design System?](/writing/front-end-development-guide#what-is-a-design-system)
+5.  [Where Should You Begin?](/writing/front-end-development-guide#where-should-you-begin)
+6.  [Building the Design System](/writing/front-end-development-guide#building-the-design-system)
+7.  [Conclusion](/writing/front-end-development-guide#conclusion)
+8.  [Resources](/writing/front-end-development-guide#resources)
+
+## What is Front-end development?
+
+<a
+    aria-label="Website Mockup"
+    href="https://dribbble.com/shots/9807680-Stripe-Landing-Page-Neomorphism"
+    target="_blank"
+    rel="noopener noreferrer"
+>
+    <Image
+        alt={`Website Mockup`}
+        src={`/static/writing/style-guides-component-libraries-design-systems/website.webp`}
+        width={1467}
+        height={878}
+        priority
+    />
+</a>
+
+In the world of web and software development, the **front-end** refers to the part of a website or application that users see and interact with, which includes the User Interface (UI) as a key factor. To create the UI, front-end developers use **HTML** for structure, **CSS** for styling, and **JavaScript** for interactivity. As it becomes more complex, developers rely on **tools**, **frameworks**, and **libraries** to streamline the development process while HTML, CSS, and JavaScript remain the core languages for UI development.
+
+However, in the past, building websites was a more tedious process that involved creating each page and element manually, often in a monolithic architecture. As websites grew in scale and more developers became involved, common elements such as buttons and forms often appeared different across various sections of the site. Furthermore, there were instances where one team ended up building a feature that another team had already completed, unknowingly adding to the confusion. All of these issues resulted in large, unwieldy code bases that were difficult and expensive to maintain, leading to communication breakdowns among developers. You may notice that large corporations such as Microsoft and Amazon have websites that look similar to those from 1997. This is because implementing significant changes to their architecture and culture can be quite challenging.
+
+Can this problem be avoided? Absolutely. However, why does it keep happening repeatedly? Without considering your design and development process early on, you will encounter problems as you expand.
+
+To avoid this problem or to remedy the current lack of consistency in your products, you need three essential tools:
+
+-   **Style Guide**
+-   **Component Library**
+-   **Design System**
+
+By the end of this article, you'll have gained years' worth of trial and error, research, and development, even if it seems like a lot to take in at first.
+
+## What Is a Style Guide?
+
+<a
+    aria-label="Style Guide"
+    href="https://dribbble.com/shots/18341579-Frames-X-Dark-Light-Theme-Components"
+    target="_blank"
+    rel="noopener noreferrer"
+>
+    <Image
+        alt={`Style Guide`}
+        src={`/static/writing/style-guides-component-libraries-design-systems/style-guide.webp`}
+        width={1468}
+        height={1101}
+    />
+</a>
+
+A **style guide** is a set of guidelines that outline the rules for how your website or application should look and feel as well as voice and tone. It covers everything from typography and color palettes to iconography and button styles. By following a style guide, you ensure consistency throughout your site, making it easier to maintain and update.
+
+A style guide is an essential tool for creating a consistent visual identity that reflects your brand's personality and values. While not always publicly available, nearly every prominent brand has its own style guide. For example, Google's style guide is available [here](https://google.github.io/styleguide/).
+
+## What is a Component Library?
+
+<a
+    aria-label="Component Library"
+    href="https://dribbble.com/shots/18581061-NFT-Marketplace-Web-Design-Components"
+    target="_blank"
+    rel="noopener noreferrer"
+>
+    <Image
+        alt={`Component Library`}
+        src={`/static/writing/style-guides-component-libraries-design-systems/component-library.webp`}
+        width={1000}
+        height={376}
+    />
+</a>
+
+A **component library** is a dynamic and functional manifestation of your **style guide**. It's a collection of pre-built UI components that ca be reused throught your brand website or application. These components can include everything from buttons and forms to entire sections of the site. By using pre-built components, you get:
+
+-   **Faster development**. You can build your site or app faster and more efficiently.
+-   **Consistency**. You can ensure consistency across your site.
+-   **Maintainability**. You can make it easier to maintain and update your site.
+-   **Accessibility**. You can ensure that your site is accessible to all users.
+
+## What is a Design System?
+
+<a
+    aria-label="Design System"
+    href="https://se-education.org/learningresources/contents/uix/design-systems.html"
+    target="_blank"
+    rel="noopener noreferrer"
+>
+    <Image
+        alt={`Design System`}
+        src={`/static/writing/style-guides-component-libraries-design-systems/design-system.png`}
+        width={1400}
+        height={900}
+    />
+</a>
+
+A design system serves as a comprehensive guide for the design of your website or application, covering everything from the overall layout to the smallest details. It encompasses your style guide and component library, and includes guidelines for accessibility, responsive design, user experience, and interaction design. A design system ensures consistency across your site while also providing a framework for innovation and growth. [Google's Material Design](https://m3.material.io/) is one of the most widely used and respected design systems.
+
+## Where Should You Begin?
+
+Your starting point may vary depending on the stage of your company or product. Before we delve into the details, let's take a look at the big picture:
+
+-   **Master HTML** or **Hyper Text Markup Language**. It goes beyond the basics that many developers assume they know. Delve deeper into it and learn about **[Semantic Markup](https://www.w3schools.com/html/html5_semantic_elements.asp) (the real SEO)**, **[Microdata](https://developer.mozilla.org/en-US/docs/Web/HTML/Microdata)** for structured data, and the **[WCAG](https://www.w3.org/WAI/standards-guidelines/wcag/)** accessibility guidelines.
+
+-   **Learn CSS** or **Cascading Style Sheets** is the language used to style HTML elements and create visually appealing designs. Start with the basics of CSS, such as selectors, properties, and values, and then move on to more advanced topics like layout, responsive design, and preprocessors like Sass or Less.
+
+-   **Learn JavaScript** or **JS** is the language used to create interactive elements on a website or application. It's the most popular programming language in the world, and it's used by developers to create everything from simple animations to complex web applications. Start with the basics such as variables, functions, loops, events, and the Document Object Model (DOM) then move on to more advanced topics like Typescript.
+
+-   **Explore React**, **Vue**, or **Angular**. These are the most popular JavaScript frameworks for building web applications. They provide a robust set of tools and libraries that make it easier to build complex applications, including creating a **Component Library**. They also provide a solid foundation for learning JavaScript. My recommendation would be **React** as it's the most popular and widely used framework.
+
+> You can skip to the next section if you already know HTML, CSS, JavaScript, and a framework like React.
+
+Here's an outline to guide us as we move into the specifics.
+
+-   Compile existing design patterns.
+-   Define design principles and **start a Style Guide**.
+-   Define your design tokens.
+-   Create or identify an icon set.
+-   Choose languages/frameworks supported.
+-   Evaluate Monorepo vs. single package.
+-   Evaluate **CSS/Sass** vs. **CSS-in-JS**.
+-   Create a **Component Library**.
+-   Choose a documentation platform.
+-   Write design system documentation.
+
+## Building the Design System
+
+### Compile existing design patterns.
+
+To ensure consistency in the user experience (UX), it's important to identify and document existing design patterns used in your interface, even if you're not starting from scratch.
+
+Begin documenting and reviewing the design patterns within your team, and identify the interaction patterns you prefer to establish the components needed for your style guide.
+
+### Define design principles and start a Style Guide.
+
+Create a style guide by translating the documented design patterns into a cohesive system using tools like:
+
+-   [Figma](https://www.figma.com/)
+-   [Sketch](https://www.sketch.com/)
+-   [Framer](https://www.framer.com/)
+-   [Abobe XD](https://www.adobe.com/products/xd.html)
+
+My recommendation would be **Figma**, but it's ultimately up to your team and company. Here's some helpful [Figma for Beginners](https://www.youtube.com/playlist?list=PLXDU_eVOJTx7QHLShNqIXL1Cgbxj7HlN4) tutorials.
+
+### Define your design tokens.
+
+<a
+    aria-label="Design Tokens"
+    href="https://dribbble.com/shots/20918313-Skylight-Design-System-Components"
+    target="_blank"
+    rel="noopener noreferrer"
+>
+    <Image
+        alt={`Design Tokens`}
+        src={`/static/writing/style-guides-component-libraries-design-systems/design-tokens.webp`}
+        width={1080}
+        height={810}
+    />
+</a>
+
+> Design tokens store visual design attributes and are named entities that act as the visual design atoms of the design system, replacing hard-coded values such as hex values for color and pixel values for spacing to maintain consistency and scalability in the UI development.
+
+This includes things like:
+
+-   [Colors](https://colors.eva.design/) (text, backgrounds, borders)
+-   [Fonts](https://fonts.google.com/)
+-   [Typography sizes](http://spencermortensen.com/articles/typographic-scale/)
+-   [Spacing values](https://spec.fm/specifics/8-pt-grid)
+-   [Shadows](https://material.io/design/environment/light-shadows.html)
+
+For example, take a look at [Vercel's Design System](https://vercel.com/design) and [Dropbox's Design System](https://dropboxdesignstandards.com/).
+
+```css
+--geist-foreground: #000;
+--geist-background: #fff;
+--accents-1: #fafafa;
+--accents-2: #eaeaea;
+--accents-3: #999999;
+--accents-4: #888888;
+--accents-5: #666666;
+--accents-6: #444444;
+--accents-7: #333333;
+--accents-8: #111111;
+--geist-success: #0070f3;
+--geist-error: #ee0000;
+--geist-warning: #f5a623;
+--dropdown-box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.02);
+--dropdown-triangle-stroke: #fff;
+--scroller-start: var(--geist-background);
+--scroller-end: rgba(255, 255, 255, 0);
+--shadow-small: 0 5px 10px rgba(0, 0, 0, 0.12);
+--shadow-medium: 0 8px 30px rgba(0, 0, 0, 0.12);
+--shadow-large: 0 30px 60px rgba(0, 0, 0, 0.12);
+--portal-opacity: 0.25;
+```
+
+Now, designers and developers share a common language.
+
+### Create or identify an icon set.
+
+<a
+    aria-label="Icon set"
+    href="https://dribbble.com/shots/19328127-Iconix-Icon-set"
+    target="_blank"
+    rel="noopener noreferrer"
+>
+    <Image
+        alt={`Icon set`}
+        src={`/static/writing/style-guides-component-libraries-design-systems/icons.webp`}
+        width={800}
+        height={600}
+    />
+</a>
+
+To decide whether to create your own icons, consider the size and priorities of your company, and if you already have existing icons, evaluate which to keep. Alternatively, you can explore open-source icon libraries such as:
+
+-   [Font Awesome](https://fontawesome.com)
+-   [Icons8](https://icons8.com/)
+-   [Material UI Icons](https://material-ui.com/components/icons/)
+-   [Eva Icons](https://akveo.github.io/eva-icons/)
+-   [Feather Icons](https://feathericons.com)
+-   [Styled Icons](https://styled-icons.js.org/)
+-   [Ikonate](https://ikonate.com/)
+
+To ensure consistency, it's important to standardize the usage and identify consumption patterns of your icons, whether they are created or open source. It's also critical to consider the end-users, such as designers, developers, or marketers. By using SVGs, you can create a single source of truth icon library following these steps:
+
+1.  Create or provide raw SVGs.
+2.  Optimize and compress SVGs with [SVGO](https://github.com/svg/svgo/).
+3.  Use [SVGR](https://github.com/smooth-code/svgr) to automatically create React components for developers.
+4.  Produce PNGs and JPEGs at various sizes/resolutions for marketing.
+5.  Bundle SVGs into a [bundled font](https://www.npmjs.com/package/icon-font-generator) for use in mobile applications.
+
+### Choose languages/frameworks supported.
+
+It's essential to consider the languages and frameworks your team currently supports and plan accordingly for your component library's architecture. If your application uses script tags instead of [ES Modules](https://flaviocopes.com/es-modules/), you'll need to bundle your library into a single distributable file. For example, a vanilla JavaScript app would require the following script tag in an HTML file:
+
+```html
+<script src="/js/component-library.min.js"></script>
+```
+
+One can use [Webpack](https://webpack.js.org/) or [Rollup](https://rollupjs.org/) to accomplish this goal, although Webpack is often preferred as it is the industry standard. If using TypeScript, [TSDX](https://github.com/formium/tsdx) is also recommended.
+
+In my opinion, [Turbopack](https://turbo.build/pack) seems to be the future because it's an incremental bundler designed for JavaScript and TypeScript, written in [Rust](https://www.rust-lang.org/) with optimization features.
+
+### Evaluate Monorepo vs. single package.
+
+A [Monorepo](https://monorepo.tools/) is a repository that contains multiple projects or libraries/packages, providing the ability to build and publish multiple libraries from a single codebase. Although it can address substantial hurdles, it also creates others, hence it's crucial to consider both its pros and cons.
+
+<Image
+    alt={`Monorepo`}
+    src={`/static/writing/style-guides-component-libraries-design-systems/monorepo.png`}
+    width={1467}
+    height={583}
+/>
+
+<ProsCard
+    title="a monorepo"
+    pros={[
+        'Small bundle sizes by limiting the scope of components included in one package.',
+        'Shared build, lint, test, and release processes for multiple packages versus separate repositories with duplicated code.',
+        'Improved version control and more granular control of semver on a package-by-package basis',
+        'Simplified dependency management and avoidance of version conflicts.',
+        'Greater visibility and easier collaboration across projects and teams.',
+    ]}
+/>
+
+<ConsCard
+    title="a monorepo"
+    cons={[
+        'Additional tooling and infrastructure needed.',
+        'Consumers are required to import from a variety of packages instead of one single component library.',
+        `Cutting edge technology. There is industry adoption, but you can run into issues very few have experienced without a clear path for a solution.`,
+    ]}
+/>
+
+Here are some factors to consider when determining the most suitable solution for your company:
+
+-   Do you have multiple repositories publishing to NPM?
+-   Is your build, test, lint infrastructure complex and duplicated in multiple places?
+-   How many repositories do you have or plan to have in the next year?
+-   What is the size of your team, and how many people will use the component library?
+-   Will the library be open-source, and can you leverage industry resources to solve problems?
+-   Do you anticipate the need for multiple packages in the future? (e.g. icons, [codemods](https://github.com/facebook/jscodeshift), etc)
+
+In my case, for a project solely focused on a website, a monorepo is unnecessary, but for a universal application requiring shared components/configurations across multiple platforms (e.g., web and mobile), a monorepo can provide significant benefits. [Solito](https://solito.dev/) is a good example.
+
+### Evaluate CSS/Sass vs. CSS-in-JS.
+
+**CSS-in-JS** is an approach that allows you to write CSS code as JavaScript functions and styles are applied dynamically at runtime. For optimal performance, consider using a near-zero runtime solution like [Stitches](https://stitches.dev/).
+
+Consider using Sass if your component library needs to output raw HTML/CSS, as IBM's [Carbon Design System](https://www.carbondesignsystem.com/components/button/code) does. You can use [CSS variables](https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties) to contain your [design tokens](https://www.lightningdesignsystem.com/design-tokens/).
+
+<Image
+    alt={`Design System Button`}
+    src={`/static/writing/style-guides-component-libraries-design-systems/button.webp`}
+    width={821}
+    height={154}
+/>
+
+```html
+<button class="bx--btn bx--btn--primary" type="button">Button</button>
+```
+
+If you're using React, check out [How Should I Style My React Application?](/writing/css-with-react)
+
+### Create a component library.
+
+Now that you have identified your technical requirements and initiated your style guide, it's time to start building your **Component Library**. I suggest utilizing **[Storybook](https://storybook.js.org/)** in conjunction with React.
+
+<a
+    aria-label="Component Driven Development"
+    href="https://storybook.js.org/"
+    target="_blank"
+    rel="noopener noreferrer"
+>
+    <Image
+        alt={`Component Driven Development`}
+        src={`/static/writing/style-guides-component-libraries-design-systems/component-driven-development.png`}
+        width={1000}
+        height={537}
+    />
+</a>
+
+**Creating a component library is much more than just translating the style guide into code.**
+
+Consider how your consumers will interact with your components and what kind of API would be most clear and self-documenting. For instance, when it comes to buttons, you might have various types like primary and secondary, etc.
+
+<Image
+    alt={`Buttons`}
+    src={`/static/writing/style-guides-component-libraries-design-systems/buttons.webp`}
+    width={1000}
+    height={641}
+/>
+
+Should you have separate components for each?
+
+```jsx
+<PrimaryButton>Button</PrimaryButton>
+<SecondaryButton>Button</SecondaryButton>
+```
+
+or should you use a prop?
+
+```jsx
+<Button>Button</Button>
+<Button variant="secondary">Button</Button>
+```
+
+Additionally, what name should you give to the prop? Would 'variant' or 'type' be appropriate? Have you thought about the fact that 'type' is a [reserved attribute](https://www.w3schools.com/tags/att_button_type.asp) for the HTML `<button>` element? These are important considerations to keep in mind as you construct your component library.
+
+Here are some additional considerations to think about:
+
+-   Should consumers [pass CSS properties](https://evergreen.segment.com/foundations/layers) in as props or extend/wrap components for styling? Consider [styled-system](https://github.com/styled-system/styled-system).
+
+-   Build loading states [directly into components](http://react.carbondesignsystem.com/?path=/story/accordion--skeleton) or have a [generic component](https://www.npmjs.com/package/react-loading-skeleton) for loading (spinner, skeleton)?
+
+-   How to test purely visual components? [Snapshot testing](https://jestjs.io/docs/en/snapshot-testing) or [Visual diff testing](https://www.chromaticqa.com/)?
+
+-   What's needed for consumers to integrate with the component library? [global style reset](https://cssreset.com/what-is-a-css-reset/)? Should they add any [Babel plugins](https://github.com/ant-design/babel-plugin-import)?
+
+-   Utilize [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/) for auto-generating changelog?
+
+-   Do components need to support web and mobile? Use [React Native Web](https://github.com/necolas/react-native-web) for cross-platform code sharing.
+
+### Choose a documentation platform.
+
+<Image
+    alt={`Storybook Docs`}
+    src={`/static/writing/style-guides-component-libraries-design-systems/storybook-docs.png`}
+    width={1000}
+    height={614}
+/>
+
+To showcase your design system, you'll need a platform. If you're new to this, I'd suggest using **[Storybook Docs](https://medium.com/storybookjs/storybook-docs-sneak-peak-5be78445094a)**. It provides similar features as other platforms like [Docz](https://github.com/doczjs/docz/tree/new), [Styleguidist](https://react-styleguidist.js.org/), [Docusaurus](https://docusaurus.io/), and [Nextra](https://nextra.site/) (Recommended for Next.js projects). Here are some of the benefits:
+
+-   Copy code snippets from component examples with ease.
+-   Auto-generate a props table based on `prop-types` and `defaultProps`.
+-   Quickly view all permutations of a component.
+-   Write custom docs using MDX.
+
+<Image
+    alt={`Storybook Flow`}
+    src={`/static/writing/style-guides-component-libraries-design-systems/storybook-flow.png`}
+    width={1300}
+    height={378}
+/>
+
+Consider creating a custom solution using [MDX](https://mdxjs.com/) if you want your design system to reflect your brand and use your component library. This approach enables the insertion of React components inside Markdown files. For instance, this blog [uses this](https://github.com/wibb36/wibb.me) method.
+
+One impressive example of having complete control over documentation is demonstrated by [Atomize React](https://atomizecode.com/docs/react/atoms).
+
+<Image
+    alt={`Atomize React`}
+    src={`/static/writing/style-guides-component-libraries-design-systems/atomize.png`}
+    width={1300}
+    height={675}
+/>
+
+### Write design system documentation.
+
+Now that you've chosen a documentation platform, You should include the following in your documentation:
+
+-   Installation and setup instructions for your component library.
+-   Type definitions and props schemas for each component.
+-   Examples of each component with copyable code snippets.
+-   Explanations of the technology choices you made.
+
+Consider also adding:
+
+-   A "Getting Started" tutorial section.
+-   Completed UI templates for users to choose from.
+-   Information about theming.
+-   A live code playground for users to interact with the components.
+
+## Conclusion
+
+As someone who has been coding for most of my life, starting back in the mid-90s when **HTML** was still in its early stages and **CSS** hadn't even been created, I've witnessed a significant evolution in the field. I've seen the rise and fall of frameworks, the growth and decline of JavaScript libraries, and the surge and dip of CSS preprocessors. Learn more [about my developer journey](/dev)!
+
+Building component libraries from the ground up has given me a newfound appreciation for the hard work that goes into front-end development and design. Below, I've compiled a list of design systems that have inspired me and serve as excellent resources. Don't hesitate to [reach out](mailto:sam@wibb.me) if you'd like to talk about building design systems. I'm looking forward to seeing what the next few years have in store for us.
+
+## Resources
+
+**Design Systems**
+
+-   [Primer](https://primer.style/).
+-   [Atlassian Design System](https://atlassian.design/).
+-   [Carbon Design System](https://www.carbondesignsystem.com/).
+-   [Lightning Design System](https://www.lightningdesignsystem.com/).
+-   [Material Design](https://material.io/design/).
+-   [Office UI Fabric](https://developer.microsoft.com/en-us/fabric#/).
+-   [Polaris](https://polaris.shopify.com/).
+-   [Salesforce Lightning Design System](https://www.lightningdesignsystem.com/).
+-   [Semantic UI](https://semantic-ui.com/).
+-   [Tailwind CSS](https://tailwindcss.com/).
+-   [U.S. Web Design System](https://designsystem.digital.gov/).
