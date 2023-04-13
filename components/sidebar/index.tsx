@@ -6,13 +6,13 @@ import Link from 'next/link';
 import { motion } from 'framer-motion';
 import type { IconType } from '../icon';
 import { Icon } from '../icon';
-
+import { Tooltip } from '../tooltip'
 import Logo from '../logo';
 
 
 const navItems: Record<string, { name: string; icon: IconType; className: string }> = {
     '/dev': {
-        name: 'dev',
+        name: 'developer',
         icon: 'dev',
         className: ''
     },
@@ -49,38 +49,43 @@ export function Sidebar() {
                         {Object.entries(navItems).map(([path, { name, icon, className }]) => {
                             const isActive = path === pathname;
                             return (
-                                <Link
-                                    key={path}
-                                    href={path}
-                                    className={clsx(
-                                        'transition-all hover:text-[#2cffd1cb] dark:hover:text-[#2cffd1cb] flex align-middle',
-                                        {
-                                            'text-gray-500': !isActive,
-                                            'font-bold': isActive,
-                                        }
-                                    )}
-                                >
-                                    <span className="relative p-[12px]">
+                                <li key={name} className="relative">
+                                    <Tooltip content={name.charAt(0).toUpperCase() + name.slice(1)} side="left">
+                                        <Link
+                                            key={path}
+                                            href={path}
+                                            aria-label={name}
+                                            className={clsx(
+                                                'transition-all hover:text-[#2cffd1cb] dark:hover:text-[#2cffd1cb] flex align-middle',
+                                                {
+                                                    'text-neutral-500': !isActive,
+                                                    'font-bold': isActive,
+                                                }
+                                            )}
+                                        >
+                                            <span className="relative p-[12px]">
 
-                                        <Icon name={icon} width={24} height={24} className={clsx(
-                                            'transition-all', {
-                                            'text-[#2cffd1cb]': isActive,
-                                        }, className
-                                        )} />
+                                                <Icon name={icon} width={24} height={24} className={clsx(
+                                                    'transition-all', {
+                                                    'text-[#2cffd1cb]': isActive,
+                                                }, className
+                                                )} />
 
-                                        {path === pathname ? (
-                                            <motion.div
-                                                className="absolute inset-0 bg-gray-100 dark:bg-gray-800 rounded-md z-[-1]"
-                                                layoutId="sidebar"
-                                                transition={{
-                                                    type: 'spring',
-                                                    stiffness: 250,
-                                                    damping: 25,
-                                                }}
-                                            />
-                                        ) : null}
-                                    </span>
-                                </Link>
+                                                {path === pathname ? (
+                                                    <motion.div
+                                                        className="absolute inset-0 bg-gray-100 dark:bg-gray-800 rounded-md z-[-1]"
+                                                        layoutId="sidebar"
+                                                        transition={{
+                                                            type: 'spring',
+                                                            stiffness: 250,
+                                                            damping: 25,
+                                                        }}
+                                                    />
+                                                ) : null}
+                                            </span>
+                                        </Link>
+                                    </Tooltip>
+                                </li>
                             );
                         })}
                     </ul>

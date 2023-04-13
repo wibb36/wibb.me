@@ -14,7 +14,7 @@ html {
 }
 
 a {
-    @apply transition-all text-white underline hover:text-gray-700 dark:hover:text-gray-200;
+    @apply transition-all text-white underline hover:text-neutral-700 dark:hover:text-neutral-200;
 }
 
 a:hover {
@@ -22,7 +22,7 @@ a:hover {
 }
 
 time {
-    @apply text-gray-500 transition-all;
+    @apply text-neutral-500 transition-all;
 }
 a:hover time {
     @apply text-primary dark:text-primary;
@@ -43,12 +43,12 @@ a:hover time {
 }
 
 .prose a {
-    @apply transition-all decoration-gray-400 dark:decoration-gray-600 hover:decoration-[#2cffd1cb] hover:decoration-dotted underline-offset-2 decoration-[0.1em];
+    @apply transition-all decoration-neutral-400 dark:decoration-neutral-600 hover:decoration-[#2cffd1cb] hover:decoration-dotted underline-offset-2 decoration-[0.1em];
 }
 
 .prose .anchor:after {
     @apply text-neutral-300 dark:text-neutral-700;
-    content: "#";
+    content: '#';
 }
 
 .prose *:hover > .anchor {
@@ -79,8 +79,8 @@ a:hover time {
     margin-bottom: 1.25em !important;
 }
 
-code[class*="language-"],
-pre[class*="language-"] {
+code[class*='language-'],
+pre[class*='language-'] {
     @apply text-neutral-50;
 }
 
@@ -94,8 +94,8 @@ pre {
 }
 
 /* Remove Safari input shadow on mobile */
-input[type="text"],
-input[type="email"] {
+input[type='text'],
+input[type='email'] {
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;

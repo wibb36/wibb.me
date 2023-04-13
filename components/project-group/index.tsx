@@ -15,7 +15,7 @@ export function ProjectCard({ title, description, href }: ProjectCardProps) {
         <div className='flex items-center rounded-xl p-4 border-2 border-neutral-800 shadow-md'>
             <div className='grow'>
                 <h4 className="text-xl font-bold mb-1">{title}</h4>
-                <p className="text-sm leading-5 text-gray-400">{description}</p>
+                <p className="text-sm leading-5 text-neutral-400">{description}</p>
             </div>
             {/* <div className="w-12 h-12 ml-2 p-3 rounded-full shadow-md bg-white">
 
@@ -26,7 +26,7 @@ export function ProjectCard({ title, description, href }: ProjectCardProps) {
     return href ? (
         <Link
             href={href}
-            className="no-underline hover:bg-[#f8f8f8] dark:hover:bg-gray-800"
+            className="no-underline hover:bg-[#f8f8f8] dark:hover:bg-neutral-800"
         >
             <Card />
         </Link>

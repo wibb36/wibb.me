@@ -14,14 +14,14 @@ export function BlogCard({ post }: { post: any }) {
                 <span className="relative">
                     <div className="w-full flex flex-col">
                         <p>{post.title}</p>
-                        <time className="font-mono text-sm tracking-tighter">{post.publishedAt}</time>
+                        <time className="font-mono text-sm tracking-tighter text-neutral-400">{post.publishedAt}</time>
                         {/* <ViewCounter slug={post.slug} trackView={false} /> */}
                     </div>
 
                     {/* I should wrap motion.div with a condtional to only show it when the link is hovered on */}
                     {/* {isHovered && (
                     <motion.div
-                        className="absolute inset-0 bg-gray-100 dark:bg-gray-800 rounded-md z-[-1]"
+                        className="absolute inset-0 bg-neutral-100 dark:bg-neutral-800 rounded-md z-[-1]"
                         transition={{
                             type: 'spring',
                             stiffness: 250,

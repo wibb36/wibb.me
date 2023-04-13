@@ -40,7 +40,7 @@ export default function ProjectsPage() {
     return (
         <section className="max-w-[702px]">
             <H1>Projects</H1>
-            <h2 className="mt-5 mb-8 max-w-[702px] text-gray-800 dark:text-gray-200">
+            <h2 className="mt-5 mb-8 max-w-[702px] text-neutral-800 dark:text-neutral-200">
                 Here's an overview of my ongoing projects.
             </h2>
 

@@ -1,6 +1,7 @@
 ---
 title: 'Mastering Front-End Development: A Comprehensive Journey'
-publishedAt: '2020-02-02'
+publishedAt: 'February 2, 2020'
+isPublished: true
 summary: 'An in-depth exploration of my learnings over the years in constructing style guides, design systems, component libraries, and their associated best practices.'
 image: '/static/writing/style-guides-component-libraries-design-systems/banner.jpg'
 ---
@@ -67,7 +68,7 @@ By the end of this article, you'll have gained years' worth of trial and error, 
 
 A **style guide** is a set of guidelines that outline the rules for how your website or application should look and feel as well as voice and tone. It covers everything from typography and color palettes to iconography and button styles. By following a style guide, you ensure consistency throughout your site, making it easier to maintain and update.
 
-A style guide is an essential tool for creating a consistent visual identity that reflects your brand's personality and values. While not always publicly available, nearly every prominent brand has its own style guide. For example, Google's style guide is available [here](https://google.github.io/styleguide/).
+A style guide is an essential tool for creating a consistent visual identity that reflects your brand's personality and values. While not always publicly available, nearly every prominent brand has its own style guide. For example, check [Google's style guide](https://google.github.io/styleguide/).
 
 ## What is a Component Library?
 
@@ -303,13 +304,6 @@ In my case, for a project solely focused on a website, a monorepo is unnecessary
 **CSS-in-JS** is an approach that allows you to write CSS code as JavaScript functions and styles are applied dynamically at runtime. For optimal performance, consider using a near-zero runtime solution like [Stitches](https://stitches.dev/).
 
 Consider using Sass if your component library needs to output raw HTML/CSS, as IBM's [Carbon Design System](https://www.carbondesignsystem.com/components/button/code) does. You can use [CSS variables](https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties) to contain your [design tokens](https://www.lightningdesignsystem.com/design-tokens/).
-
-<Image
-    alt={`Design System Button`}
-    src={`/static/writing/style-guides-component-libraries-design-systems/button.webp`}
-    width={821}
-    height={154}
-/>
 
 ```html
 <button class="bx--btn bx--btn--primary" type="button">Button</button>

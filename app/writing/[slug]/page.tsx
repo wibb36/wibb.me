@@ -67,10 +67,10 @@ export default async function BlogPost({ params }) {
         <section>
             <H1>{post.title}</H1>
             <div className="grid grid-cols-[auto_1fr_auto] items-center mt-4 mb-8 font-mono text-sm max-w-[702px]">
-                <div className="bg-gray-100 dark:bg-gray-800 rounded-md px-3 py-2 tracking-tighter font-bold">
-                    <time>{post.publishedAt}</time>
-                </div>
-                <div className="h-[0.2em] bg-gray-50 dark:bg-gray-800 mx-2" />
+                <time className="bg-neutral-100 dark:bg-neutral-800 rounded-md px-3 py-2 tracking-tighter font-bold text-neutral-400">
+                    {post.publishedAt}
+                </time>
+                <div className="h-[0.2em] bg-neutral-50 dark:bg-neutral-800 mx-2" />
                 {/* <ViewCounter slug={post.slug} trackView /> */}
             </div>
             <Mdx code={post.body.code}

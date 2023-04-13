@@ -1,7 +1,8 @@
 ---
-title: "The Ultimate Guide to CSS in React"
-publishedAt: "2020-01-12"
-summary: "Explore the evolution of CSS and weigh the pros and cons of various styling approaches for React in this informative guide."
+title: 'The Ultimate Guide to CSS in React'
+publishedAt: 'January 12, 2020'
+isPublished: true
+summary: 'Explore the evolution of CSS and weigh the pros and cons of various styling approaches for React in this informative guide.'
 ---
 
 Curious about **CSS in React**? or **React-Powered Solutions**? As a front-end developer, you know the value of CSS in web development, but how does it work with React? Join me as we will be covering everything from the fundamentals to more advanced techniques.
@@ -50,7 +51,7 @@ body {
 ```
 
 ```scss title="_header.scss"
-@use "base";
+@use 'base';
 .header {
     font-size: 32px;
 }
@@ -155,11 +156,11 @@ Here's a breakdown of the pros and cons of different approaches to styling your 
 <ProsCard
     title="CSS modules"
     pros={[
-        "You need component-specific scoped class names.",
-        "You want to reuse CSS variables.",
-        "You require your app to work without JavaScript.",
-        "You want the lowest barrier to entry.",
-        "You want to use any language, not just JavaScript.",
+        'You need component-specific scoped class names.',
+        'You want to reuse CSS variables.',
+        'You require your app to work without JavaScript.',
+        'You want the lowest barrier to entry.',
+        'You want to use any language, not just JavaScript.',
     ]}
 />
 
@@ -167,9 +168,9 @@ Here's a breakdown of the pros and cons of different approaches to styling your 
     title="CSS modules"
     cons={[
         "You don't want to configure a toolchain such as Webpack.",
-        "You need to distribute a package on NPM.",
-        "You require nested CSS support by default (PostCSS is needed).",
-        "You want to avoid switching between multiple files.",
+        'You need to distribute a package on NPM.',
+        'You require nested CSS support by default (PostCSS is needed).',
+        'You want to avoid switching between multiple files.',
     ]}
 />
 
@@ -182,10 +183,10 @@ Some libraries like [Linaria](https://github.com/callstack/linaria) extract CSS 
 <ProsCard
     title="CSS-in-JS"
     pros={[
-        "You want to share components on NPM.",
-        "You want to leverage the JavaScript ecosystem.",
-        "You want to co-locate styles with components for easy deletion.",
-        "You need to support multiple themes.",
+        'You want to share components on NPM.',
+        'You want to leverage the JavaScript ecosystem.',
+        'You want to co-locate styles with components for easy deletion.',
+        'You need to support multiple themes.',
     ]}
 />
 
@@ -193,8 +194,8 @@ Some libraries like [Linaria](https://github.com/callstack/linaria) extract CSS 
     title="CSS-in-JS"
     cons={[
         `You don't want to set up a toolchain like Webpack.`,
-        "You find it hard to name things.",
-        "You believe it violates separation of concerns.",
+        'You find it hard to name things.',
+        'You believe it violates separation of concerns.',
         `You don't want to enforce a specific CSS-in-JS library for all consumers.`,
     ]}
 />
@@ -209,18 +210,18 @@ These libraries are primarily used for implementing component libraries and desi
     title="Theme UI / styled-system"
     pros={[
         `You're building a design system or component library.`,
-        "You want to enforce a consistent style across your application.",
-        "You want to reduce the need for custom CSS.",
-        "You want a more declarative approach to styling.",
+        'You want to enforce a consistent style across your application.',
+        'You want to reduce the need for custom CSS.',
+        'You want a more declarative approach to styling.',
     ]}
 />
 
 <ConsCard
     title="Theme UI / styled-system"
     cons={[
-        "You prefer traditional CSS.",
+        'You prefer traditional CSS.',
         "You believe that styling should be separated from the component's logic.",
-        "You dislike the idea of passing styles as props.",
+        'You dislike the idea of passing styles as props.',
     ]}
 />
 
@@ -233,9 +234,9 @@ When combined with [Tailwind UI](https://tailwindui.com/), it is an excellent to
 <ProsCard
     title="Tailwind"
     pros={[
-        "You prefer using HTML or JSX for your styling.",
-        "You want to implement a design system.",
-        "You want to minimize the time spent naming components.",
+        'You prefer using HTML or JSX for your styling.',
+        'You want to implement a design system.',
+        'You want to minimize the time spent naming components.',
     ]}
 />
 

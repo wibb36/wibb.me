@@ -21,7 +21,7 @@ export function TimelineBlock({ title, time, description, className }: TimelineB
         >
 
             <h3 className="text-base md:text-xl font-semibold tracking-wide">{title}</h3>
-            <time className="text-xs tracking-wide uppercase dark:dark:text-gray-400">{time}</time>
+            <time className="text-xs tracking-wide uppercase dark:dark:text-neutral-400">{time}</time>
 
             <p className="mt-3">{description}</p>
 

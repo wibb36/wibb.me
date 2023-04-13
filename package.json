@@ -11,6 +11,7 @@
         "reset": "sh scripts/reset.sh"
     },
     "dependencies": {
+        "@radix-ui/react-tooltip": "^1.0.5",
         "clsx": "^1.2.1",
         "contentlayer": "^0.3.1",
         "date-fns": "^2.29.3",
