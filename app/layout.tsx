@@ -3,7 +3,7 @@ import './global.css'
 import clsx from 'clsx';
 import type { Metadata } from 'next';
 import localFont from 'next/font/local';
-import { Sidebar } from '../components';
+import { Sidebar, Breadcrumbs } from '../components';
 
 const wibb_font = localFont({
     src: '../public/fonts/ibm-plex-sans-var.woff2',
@@ -72,6 +72,7 @@ export default function RootLayout({
             <body className="antialiased max-w-4xl mb-40 flex flex-col md:flex-row mx-4 mt-8 md:mt-20 lg:mt-32 lg:mx-auto bg-grid [--grid-opacity:0.08] [--grid-size:100px]">
                 <Sidebar />
                 <main className="flex-auto min-w-0 mt-6 md:mt-0 flex flex-col px-2 md:px-0">
+                    <Breadcrumbs />
                     {children}
                 </main>
             </body>

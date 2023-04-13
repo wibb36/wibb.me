@@ -48,7 +48,6 @@ export function ProjectGroup({ groupTitle, projects }: ProjectGroupProps) {
                 {projects.map((project) => (
                     <li key={project.title}>
                         <ProjectCard
-                            // href={`/projects/${project.title.toLowerCase().replace(/ /g, '-')}`}
                             {...project}
                         />
                     </li>
