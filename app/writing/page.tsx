@@ -16,7 +16,7 @@ export default function WritingPage() {
                 <h2 className="my-5 max-w-[702px] text-neutral-800 dark:text-neutral-200">
                     Every now and again, I aim to share my knowledge on <b>software</b>, AI, economy, people, globalization, and more, hoping to make an impact.
                 </h2>
-                <p className="text-neutral-400">Soon, I will transfer all the articles from my old website to this new one.</p>
+                <p className="text-neutral-400">I'll soon move all articles from my old website to this new one.</p>
             </section>
 
             <section>

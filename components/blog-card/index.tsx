@@ -14,7 +14,7 @@ export function BlogCard({ post }: { post: any }) {
                 <span className="relative">
                     <div className="w-full flex flex-col">
                         <p>{post.title}</p>
-                        <time className="font-mono text-sm tracking-tighter text-neutral-400">{post.publishedAt}</time>
+                        <time className="font-mono text-sm tracking-tighter text-neutral-400">{post.publishedAt} · {Math.ceil(post.readingTime.minutes)} min read</time>
                         {/* <ViewCounter slug={post.slug} trackView={false} /> */}
                     </div>
 
