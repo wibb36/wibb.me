@@ -9,7 +9,7 @@ export default function Logo() {
         <Link aria-label="Sam Wibb" href="/">
             <Image
                 alt={name}
-                className="rounded-full grayscale border-solid border-4 border-white"
+                className="rounded-full grayscale border-solid border-4 border-neutral-200 dark:border-white"
                 src={avatar}
                 placeholder="blur"
                 width={48}

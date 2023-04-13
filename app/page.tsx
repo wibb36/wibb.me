@@ -4,16 +4,16 @@ import { Icon } from '../components';
 export default function HomePage() {
     return (
         <section>
-            <h1 className="font-bold text-xl mb-5">{name}</h1>
-            <p className="my-5 max-w-[500px] text-neutral-800 dark:text-neutral-200">
+            <h1 className="font-bold text-xl">{name}</h1>
+            <p className="my-4 max-w-[500px] text-neutral-800 dark:text-neutral-200">
                 {about()}
             </p>
 
-            <p className="my-5 max-w-[600px] text-neutral-800 dark:text-neutral-200" >
+            <p className="my-4 max-w-[600px] text-neutral-800 dark:text-neutral-200" >
                 {bio()}
             </p>
 
-            <ul className="my-5 flex flex-col md:flex-row mt-8 space-x-0 md:space-x-4 space-y-2 md:space-y-0 font-sm text-neutral-500 dark:text-neutral-400">
+            <ul className="my-4 flex flex-col md:flex-row mt-8 space-x-0 md:space-x-4 space-y-2 md:space-y-0 font-sm text-neutral-500 dark:text-neutral-400">
                 <li>
                     <a
                         className="flex items-center no-underline transition-all"
