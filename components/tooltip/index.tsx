@@ -29,10 +29,10 @@ export function Tooltip({ content, side = "top", children, ...props }: TooltipPr
                         "radix-side-bottom:animate-slide-up-fade",
                         "radix-side-left:animate-slide-right-fade",
                         "inline-flex items-center rounded-md px-4 py-2.5",
-                        "dark:bg-gray-800 relative top-[-18px] transform transition-all duration-400 z-10 shadow-x"
+                        "bg-gray-200 dark:bg-gray-800 relative top-[-18px] transform transition-all duration-400 z-10 shadow-x"
                     )}
                 >
-                    <TooltipPrimitive.Arrow className="fill-gray-800" />
+                    <TooltipPrimitive.Arrow className="fill-gray-200 dark:fill-gray-800" />
                     <span className="block font-mono text-sm leading-none">
                         {content}
                     </span>

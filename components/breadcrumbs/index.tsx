@@ -12,7 +12,7 @@ export function Breadcrumbs() {
             <ol>
                 {paths.map((path) => (
                     <li key={path} className="flex items-center space-x-3">
-                        <Link href={`${path === '' ? '/' : `/${path}`}`} className="text-neutral-400 capitalize transition-all ease-linear" area-label={path}>
+                        <Link href={`${path === '' ? '/' : `/${path}`}`} className="text-neutral-800 dark:text-neutral-400 capitalize transition-all ease-linear" area-label={path}>
                             {path === '' ? 'home' : path}
                         </Link>
                         <div

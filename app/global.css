@@ -3,8 +3,9 @@
 @tailwind utilities;
 
 ::selection {
+    @apply text-[#158f7a] dark:text-primary;
     background-color: rgba(0, 253, 224, 0.105);
-    color: rgba(44, 255, 209, 0.796);
+    /* color: rgba(44, 255, 209, 0.796); */
 }
 
 html {
@@ -14,18 +15,18 @@ html {
 }
 
 a {
-    @apply transition-all text-white underline hover:text-neutral-700 dark:hover:text-neutral-200;
+    @apply transition-all underline;
 }
 
 a:hover {
-    @apply text-primary dark:text-primary decoration-dotted;
+    @apply text-[#158f7a] dark:text-primary decoration-dotted;
 }
 
 time {
     @apply text-neutral-500 transition-all;
 }
 a:hover time {
-    @apply text-primary dark:text-primary;
+    @apply text-[#158f7a] dark:text-primary;
 }
 
 .prose .anchor {
@@ -43,7 +44,7 @@ a:hover time {
 }
 
 .prose a {
-    @apply transition-all decoration-neutral-400 dark:decoration-neutral-600 hover:decoration-[#2cffd1cb] hover:decoration-dotted underline-offset-2 decoration-[0.1em];
+    @apply transition-all decoration-neutral-400 dark:decoration-neutral-600 hover:decoration-[#158f7a] hover:dark:decoration-[#2cffd1cb] hover:decoration-dotted underline-offset-2 decoration-[0.1em];
 }
 
 .prose .anchor:after {

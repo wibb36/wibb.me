@@ -6,8 +6,8 @@ export type IconType = keyof typeof icons;
 
 export const icons = {
     home: (props: React.SVGProps<SVGSVGElement>) => (
-        <svg viewBox="0 0 24 24" {...props}>
-            <path d="M20 6L9 17l-5-5" />
+        <svg viewBox="0 0 576 512" {...props}>
+            <path d="M576 287.6h-64.2l1 224.4H64.1V287.6H0V240L288.4 0 576 240v47.6zM352 224a64 64 0 1 0-128 0 64 64 0 1 0 128 0zm48 192-32-96H208l-32 96h224z" />
         </svg>
     ),
 

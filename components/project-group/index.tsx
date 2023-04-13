@@ -12,7 +12,7 @@ type ProjectCardProps = {
 export function ProjectCard({ title, description, href }: ProjectCardProps) {
 
     const Card = () => (
-        <div className='flex items-center rounded-xl p-4 border-2 border-neutral-800 shadow-md'>
+        <div className='flex items-center rounded-xl p-4 border-2 border-neutral-100 dark:border-neutral-800 dark:shadow-md'>
             <div className='grow'>
                 <h4 className="text-xl font-bold mb-1">{title}</h4>
                 <p className="text-sm leading-5 text-neutral-400">{description}</p>

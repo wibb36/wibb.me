@@ -16,7 +16,7 @@ export function TimelineBlock({ title, time, description, className }: TimelineB
         <li
 
             className={clsx(
-                'flex flex-col relative before:absolute before:top-[6px] before:w-4 before:h-4 before:rounded-full before:left-[-36px] before:z-[1] before:dark:dark:bg-primary sm:pl-3', className
+                'flex flex-col relative before:absolute before:top-[6px] before:w-4 before:h-4 before:rounded-full before:left-[-36px] before:z-[1] before:bg-[#158f7a] before:dark:bg-primary sm:pl-3', className
             )}
         >
 
@@ -36,7 +36,7 @@ type TimelineProps = {
 export function Timeline({ timeline }: TimelineProps) {
     return (
         <div className="pl-2 my-10">
-            <ul className="space-y-12 relative pl-6 before:absolute before:top-2 before:bottom-0 before:w-0.5 before:-left-[1px] before:dark:bg-neutral-800">
+            <ul className="space-y-12 relative pl-6 before:absolute before:top-2 before:bottom-0 before:w-0.5 before:-left-[1px] before:bg-neutral-100 before:dark:bg-neutral-800">
                 {timeline
                     .map((block, index) => ({ ...block, originalIndex: index })) // Add the original index to each block
                     .sort((a, b) => b.originalIndex - a.originalIndex) // Sort the timeline array in reverse order based on original index
