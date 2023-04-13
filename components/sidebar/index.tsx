@@ -45,12 +45,11 @@ export function Sidebar() {
                     className="flex flex-row md:flex-col items-start relative px-4 md:px-0 pb-0 fade"
                     id="nav"
                 >
-                    <ul className="flex flex-row md:flex-col justify-center items-center space-x-4 md:space-x-0 md:space-y-4">
+                    <div className="flex flex-row md:flex-col justify-center items-center space-x-4 md:space-x-0 md:space-y-4">
                         {Object.entries(navItems).map(([path, { name, icon, className }]) => {
                             const isActive = path === pathname;
                             return (
-                                <li key={name} className="relative">
-                                    <Tooltip content={name.charAt(0).toUpperCase() + name.slice(1)} side="left">
+                                <Tooltip key={name} content={name.charAt(0).toUpperCase() + name.slice(1)} side="left">
                                         <Link
                                             key={path}
                                             href={path}
@@ -84,11 +83,10 @@ export function Sidebar() {
                                                 ) : null}
                                             </span>
                                         </Link>
-                                    </Tooltip>
-                                </li>
+                                </Tooltip>
                             );
                         })}
-                    </ul>
+                    </div>
                 </nav>
             </div>
         </aside>
