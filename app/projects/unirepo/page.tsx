@@ -25,7 +25,7 @@ export default function UnirepoPage() {
     return (
         <>
             <section className="mb-6">
-                <H1 className="mt-[-3px] text-3xl md:text-8xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-blue-500 via-purple-500 to-indigo-500">Unirepo</H1>
+                <H1 className="mt-[-3px] text-3xl md:text-8xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-red-500 via-orange-500 to-yellow-300">Unirepo</H1>
 
                 <h2 className="my-5 max-w-[702px] text-2xl md:text-4xl text-neutral-800 dark:text-neutral-200">
                     Bridging Web and Mobile for robust cross-platform app development.
