@@ -84,6 +84,9 @@ devDependencies:
   reading-time:
     specifier: ^1.5.0
     version: 1.5.0
+  tailwind-scrollbar:
+    specifier: ^3.0.0
+    version: 3.0.0(tailwindcss@3.2.7)
   tailwindcss:
     specifier: ^3.2.7
     version: 3.2.7(postcss@8.4.21)
@@ -5014,6 +5017,15 @@ packages:
       '@pkgr/utils': 2.3.1
       tslib: 2.5.0
     dev: false
+
+  /tailwind-scrollbar@3.0.0(tailwindcss@3.2.7):
+    resolution: {integrity: sha512-OkVRX9Q1T769vk979UZ519jhj/j/zNBHql7zPLI+tlhX+ahksYO4ZryWD29lOETDx9Wj1sw+K1OeW7W3+ECQOA==}
+    engines: {node: '>=12.13.0'}
+    peerDependencies:
+      tailwindcss: 3.x
+    dependencies:
+      tailwindcss: 3.2.7(postcss@8.4.21)
+    dev: true
 
   /tailwindcss@3.2.7(postcss@8.4.21):
     resolution: {integrity: sha512-B6DLqJzc21x7wntlH/GsZwEXTBttVSl1FtCzC8WP4oBc/NKef7kaax5jeihkkCEWc831/5NDJ9gRNDK6NEioQQ==}
