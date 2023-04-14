@@ -17,7 +17,10 @@ export const metadata: Metadata = {
         default: 'Sam Wibb',
         template: '%s | Sam Wibb',
     },
+    creator: 'Sam Wibb',
+    publisher: 'Sam Wibb',
     description: 'Developer, writer, and creator.',
+    keywords: ['developer', 'writer', 'creator', 'sam', 'wibb', 'wibb36'],
     openGraph: {
         title: 'Sam Wibb',
         description: 'Developer, writer, and creator.',
@@ -47,13 +50,26 @@ export const metadata: Metadata = {
     twitter: {
         title: 'Sam Wibb',
         card: 'summary_large_image',
+        // description: 'Developer, writer, and creator.',
+        // siteId: '',
+        // creator: '@wibb36',
+        // creatorId: '',
+        // image: 'https://wibb.me/og.jpg',
     },
     icons: {
+        // icon: '',
         shortcut: '/favicon.ico',
+        // apple: '/apple-touch-icon.png',
+        // other: {
+        //     rel: 'apple-touch-icon-precomposed',
+        //     url: '/apple-touch-icon-precomposed.png',
+        // },
     },
+    // manifest: 'https://wibb.me/manifest.json',
     verification: {
-        // google: 'eZSdmzAXlLkKhNJzfgwDqWORghxnJ8qR9_CHdAh5-xw',
-        // yandex: '14d2e73487fa6c71',
+        google: 'UNbWyO-U7s3oD6AMJmNG1Le3AtSomhPPGeROeBfy0Fs',
+        yandex: '0eb557e1e619fca2',
+        // bing & yahoo: Yahoo has been using Bing's Webmaster Tools since 2011, it's done automatically through importing from Google.
     },
 };
 
