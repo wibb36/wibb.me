@@ -1,6 +1,12 @@
 import { withContentlayer } from 'next-contentlayer'
+import withPWAInit from '@ducanh2912/next-pwa'
+
+const withPWA = withPWAInit({
+    dest: 'public',
+})
 
 const nextConfig = {
+    productionBrowserSourceMaps: true,
     images: {
         formats: ['image/avif', 'image/webp'],
         // Twitter Profile Picture
@@ -80,4 +86,4 @@ const securityHeaders = [
     },
 ]
 
-export default withContentlayer(nextConfig)
+export default withPWA(withContentlayer(nextConfig))

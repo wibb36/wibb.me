@@ -16,7 +16,7 @@ The official source code for [wibb.me](https://wibb.me/). which contains informa
 This application requires Node.js v16.13+.
 
 ```bash
-git clone https://github.com/wibb36/wbb.me.git
+git clone https://github.com/wibb36/wibb.me.git
 cd wibb.me
 pnpm install
 pnpm dev

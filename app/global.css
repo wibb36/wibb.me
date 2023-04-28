@@ -8,6 +8,17 @@
     /* color: rgba(44, 255, 209, 0.796); */
 }
 
+:root {
+    /* Your default theme */
+    --background: white;
+    --foreground: black;
+}
+
+[data-theme='dark'] {
+    --background: black;
+    --foreground: white;
+}
+
 html {
     @apply antialiased tracking-wide text-lg;
     font-family: var(--font-wibb);

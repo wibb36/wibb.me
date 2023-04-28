@@ -30,5 +30,8 @@ module.exports = {
             },
         },
     },
-    plugins: [require('@tailwindcss/typography'), require('tailwind-scrollbar'),],
+    plugins: [
+        require('@tailwindcss/typography'),
+        require('tailwind-scrollbar'),
+    ],
 }

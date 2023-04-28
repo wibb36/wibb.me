@@ -36,3 +36,13 @@ next-env.d.ts
 
 # contentlayer
 .contentlayer
+
+# Auto Generated PWA files
+**/public/pwa/sw.js
+**/public/pwa/workbox-*.js
+**/public/pwa/worker-*.js
+**/public/pwa/sw.js.map
+**/public/pwa/workbox-*.js.map
+**/public/pwa/worker-*.js.map
+**/public/pwa/fallback-*.js
+**/public/pwa/fallback-*.js.map
