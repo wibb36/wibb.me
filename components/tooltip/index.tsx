@@ -33,7 +33,7 @@ export function Tooltip({ content, side = "top", children, ...props }: TooltipPr
                     )}
                 >
                     <TooltipPrimitive.Arrow className="fill-gray-200 dark:fill-gray-800" />
-                    <span className="block font-mono text-sm leading-none">
+                    <span className="block font-mono text-sm leading-none capitalize">
                         {content}
                     </span>
                 </TooltipPrimitive.Content>

@@ -8,7 +8,7 @@ import type { IconType } from '../icon';
 import { Icon } from '../icon';
 import { Tooltip } from '../tooltip'
 import Logo from '../logo';
-
+import { ThemeSwitch } from '../theme-switch';
 
 const navItems: Record<string, { name: string; icon: IconType; className: string }> = {
     '/': {
@@ -43,11 +43,13 @@ export function Sidebar() {
     return (
         <aside className="md:w-[150px] md:flex-shrink-0 -mx-4 md:mx-0 md:px-0 font-serif">
             <div className="flex flex-row md:flex-col items-center md:sticky md:top-20">
+
                 <div className="mt-[4px] mb-2 px-4 md:px-0 md:mb-8 space-y-10 flex flex-col md:flex-row items-start ">
                     <Logo />
                 </div>
+
                 <nav
-                    className="flex flex-row md:flex-col items-start relative px-4 md:px-0 pb-0 fade"
+                    className="flex flex-row md:flex-col items-start justify-center relative px-4 md:px-0 pb-0 fade"
                     id="nav"
                 >
                     <div className="flex flex-row md:flex-col justify-center items-center space-x-4 md:space-x-0 md:space-y-4">
@@ -92,6 +94,14 @@ export function Sidebar() {
                             );
                         })}
                     </div>
+
+                    {/* Divider hidden on mobile temporary */}
+                    <div className="hidden md:flex my-10 w-[20px] h-[.5px] bg-neutral-300 dark:bg-neutral-800 self-center" />
+
+                    <div className="hidden md:flex align-middle self-center">
+                        <ThemeSwitch className="p-[12px]" />
+                    </div>
+
                 </nav>
             </div>
         </aside>
