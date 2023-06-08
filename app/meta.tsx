@@ -4,6 +4,7 @@ const APP_NAME = "Sam Wibb";
 const APP_CREATOR = APP_NAME;
 
 export const metadata: Metadata = {
+    metadataBase: new URL('https://wibb.me'),
     applicationName: APP_NAME,
     title: {
         default: APP_NAME,
@@ -20,7 +21,7 @@ export const metadata: Metadata = {
         siteName: APP_CREATOR,
         images: [
             {
-                url: 'https://wibb.me/og.jpg',
+                url: '/og.jpg',
                 width: 1920,
                 height: 1080,
             },
