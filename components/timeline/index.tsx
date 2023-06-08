@@ -1,7 +1,7 @@
 'use client';
 
 import React from 'react';
-import clsx from 'clsx';
+import { cn } from "@/lib/utils"
 
 type TimelineBlockProps = {
     title: string;
@@ -15,7 +15,7 @@ export function TimelineBlock({ title, time, description, className }: TimelineB
     return (
         <li
 
-            className={clsx(
+            className={cn(
                 'flex flex-col relative before:absolute before:top-[6px] before:w-4 before:h-4 before:rounded-full before:left-[-36px] before:z-[1] before:bg-[#158f7a] before:dark:bg-primary sm:pl-3', className
             )}
         >

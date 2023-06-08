@@ -1,5 +1,5 @@
-import clsx from 'clsx';
 import Balancer from 'react-wrap-balancer';
+import { cn } from "@/lib/utils"
 
 type PostTitleProps = {
     isGradient?: boolean
@@ -14,7 +14,7 @@ export const H1 = ({
 }: PostTitleProps) => {
     return (
         <h1
-            className={clsx(
+            className={cn(
                 'capitalize font-bold text-3xl font-serif max-w-[702px]',
                 { 'text-gradient': isGradient }, className
             )}

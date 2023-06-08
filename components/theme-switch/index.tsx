@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { useTheme } from "next-themes";
-import clsx from 'clsx';
+import { cn } from "@/lib/utils"
 
 import type { IconType } from '../icon'
 import { Icon } from '../icon';
@@ -47,7 +47,7 @@ export function ThemeSwitch({ className }: { className?: string; }) {
     return (
         <button
             onClick={handleClick}
-            className={clsx(
+            className={cn(
                 'transition-all text-neutral-500 hover:text-[#158f7a] dark:hover:text-[#2cffd1cb]', className
             )}
             aria-label={currentOption.label}
