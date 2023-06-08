@@ -14,7 +14,7 @@ export default async function sitemap() {
 
     const posts = allBlogs.map((post) => ({
         url: `https://wibb.me/writing/${post.slug}`,
-        lastModified: post.publishedAt,
+        lastModified: new Date(post.publishedAt).toISOString().split('T')[0],
     }))
 
     return [...routes, ...posts]
