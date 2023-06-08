@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-    darkMode: "class",
+    darkMode: 'class',
     content: [
         './pages/**/*.{js,ts,jsx,tsx}',
         './components/**/*.{js,ts,jsx,tsx}',
@@ -26,8 +26,12 @@ module.exports = {
                 },
             },
             colors: {
-                primary: '#2cffd1cb',
-                error: '#ff2c2c',
+                primary: {
+                    DEFAULT: 'var(--primary)',
+                },
+                error: {
+                    DEFAULT: 'var(--error)',
+                },
             },
         },
     },

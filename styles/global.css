@@ -8,16 +8,26 @@
     /* color: rgba(44, 255, 209, 0.796); */
 }
 
-:root {
-    /* Your default theme */
-    --background: white;
-    --foreground: black;
+@layer base {
+    :root {
+        /* Your default theme */
+        --background: white;
+        --foreground: black;
+
+        --primary: #2cffd1cb;
+        --error: #ff2c2c;
+    }
+    
+    .dark, [data-theme='dark'] {
+        --background: black;
+        --foreground: white;
+
+        --primary: #2cffd1cb;
+        --error: #ff2c2c;
+    }
 }
 
-[data-theme='dark'] {
-    --background: black;
-    --foreground: white;
-}
+
 
 html {
     @apply antialiased tracking-wide text-lg;
