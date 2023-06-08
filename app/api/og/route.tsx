@@ -1,17 +1,16 @@
-import { ImageResponse } from '@vercel/og';
-import { NextRequest } from 'next/server';
+import { NextRequest, ImageResponse } from 'next/server';
 
-export const config = {
-    runtime: 'edge',
-};
+export const runtime = 'nodejs';
+export const preferredRegion = 'auto';
 
 const font = fetch(
-    new URL('../../public/fonts/ibm-plex-sans-var.woff2', import.meta.url)
+    new URL('../../../public/fonts/ibm-plex-sans-var.woff2', import.meta.url)
 ).then((res) => res.arrayBuffer());
 
-export default async function handler(req: NextRequest) {
+export async function GET(req: NextRequest) {
     const { searchParams } = req.nextUrl;
     const postTitle = searchParams.get('title');
+    const fontData = await font;
 
     return new ImageResponse((
         <div
