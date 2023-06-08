@@ -36,6 +36,17 @@ const nextConfig = {
             },
         ]
     },
+    // TODO: Remove this when this issue (https://github.com/shadcn/ui/pull/429 | https://github.com/contentlayerdev/contentlayer/issues/313) is resolved.
+
+    // TODO: migrate to Turbopack when it's stable (https://turbo.build/pack/docs/migrating-from-webpack)
+    webpack: (config) => {
+        config.infrastructureLogging = {
+            level: 'error',
+        }
+        // Important: return the modified config
+        // https://nextjs.org/docs/messages/undefined-webpack-config
+        return config
+    },
 }
 
 const ContentSecurityPolicy = `
