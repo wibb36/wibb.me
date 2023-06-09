@@ -2,7 +2,7 @@
 
 import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
-import { Mdx, H1 } from '../../../components';
+import { Mdx, H1 } from '@/components';
 
 import { allBlogs } from 'contentlayer/generated';
 // import ViewCounter from '../view-counter';

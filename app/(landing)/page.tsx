@@ -1,5 +1,5 @@
-import { name, about, bio } from '../lib/info';
-import { Icon } from '../components';
+import { name, about, bio } from '@/lib/info';
+import { Icon } from '@/components';
 
 export default function HomePage() {
     return (

@@ -22,11 +22,11 @@ export function Tooltip({ content, children, className, ...props }: TooltipProps
                 <TooltipPrimitive.Content
                     {...props}
                     className={cn(
-                        "z-50 overflow-hidden rounded-md bg-gray-200 dark:bg-gray-800 px-3 py-1.5 font-sans text-sm text-popover-foreground shadow-md animate-in fade-in-25 data-[side=bottom]:slide-in-from-top-1 data-[side=left]:slide-in-from-right-1 data-[side=right]:slide-in-from-left-1 data-[side=top]:slide-in-from-bottom-1",
+                        "z-50 overflow-hidden rounded-md bg-neutral-200 dark:bg-neutral-800 px-3 py-1.5 font-sans text-sm text-popover-foreground shadow-md animate-in fade-in-25 data-[side=bottom]:slide-in-from-top-1 data-[side=left]:slide-in-from-right-1 data-[side=right]:slide-in-from-left-1 data-[side=top]:slide-in-from-bottom-1",
                         className
                     )}
                 >
-                    <TooltipPrimitive.Arrow className="animate-in fill-gray-200 dark:fill-gray-800" />
+                    <TooltipPrimitive.Arrow className="animate-in fill-neutral-200 dark:fill-neutral-800" />
                     {content}
                 </TooltipPrimitive.Content>
             </TooltipPrimitive.Root>

@@ -3,6 +3,7 @@
 export * from './blog-card'
 export * from './breadcrumbs'
 export * from './icon'
+export * from './layout'
 export * from './mdx'
 export * from './project-group'
 export * from './sidebar'

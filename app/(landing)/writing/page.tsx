@@ -1,6 +1,6 @@
 import type { Metadata } from 'next';
 import { allBlogs } from 'contentlayer/generated';
-import { H1, BlogCard } from '../../components';
+import { H1, BlogCard } from '@/components';
 
 export const metadata: Metadata = {
     title: 'Writing',

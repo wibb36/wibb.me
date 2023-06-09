@@ -1,12 +1,16 @@
 'use client';
 
-import Link from 'next/link';
+import Link, { LinkProps as NextLinkProps } from 'next/link';
 import Image from "next/image";
 import { name, avatar } from '../../lib';
 
-export default function Logo() {
+interface LogoProps extends NextLinkProps {
+    className?: string
+}
+
+export default function Logo(props: LogoProps) {
     return (
-        <Link aria-label="Sam Wibb" href="/">
+        <Link {...props} aria-label="Sam Wibb" className={props.className}>
             <Image
                 alt={name}
                 className="rounded-full grayscale border-solid border-4 border-neutral-200 dark:border-white"

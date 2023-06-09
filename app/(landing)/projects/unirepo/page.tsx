@@ -2,7 +2,7 @@ import React from 'react';
 import type { Metadata } from 'next';
 import { motion } from 'framer-motion';
 
-import { H1 } from '../../../components';
+import { H1 } from '@/components';
 
 export const metadata: Metadata = {
     title: 'Unirepo',

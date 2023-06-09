@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 import Link from 'next/link'
 
-import { H1, Timeline } from '../../components';
+import { H1, Timeline } from '@/components';
 import timeline from './timeline';
 
 export const metadata: Metadata = {

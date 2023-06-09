@@ -26,6 +26,9 @@ module.exports = {
                 },
             },
             colors: {
+                background: {
+                    DEFAULT: 'var(--background)',
+                },
                 primary: {
                     DEFAULT: 'var(--primary)',
                 },

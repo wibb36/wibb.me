@@ -1,7 +1,7 @@
-import '../styles/global.css'
+import '@/styles/index.css'
 
 import localFont from 'next/font/local';
-import { TopLoader, Providers, Sidebar, Breadcrumbs } from '../components';
+import { TopLoader, Providers } from '../components';
 
 export { metadata } from './meta'
 
@@ -17,14 +17,13 @@ export default function RootLayout({
 }: {
     children: React.ReactNode
 }) {
+
     return (
         <html
             lang="en"
             className={wibb_font.variable}
-            suppressHydrationWarning
         >
-            <body className="antialiased max-w-4xl mb-40 flex flex-col md:flex-row mx-4 mt-8 md:mt-20 lg:mt-32 lg:mx-auto bg-grid [--grid-opacity:0.08] [--grid-size:100px] overflow-y-scroll scrollbar scrollbar-thumb-[#158f7a] dark:scrollbar-thumb-primary scrollbar-track-gray-200 dark:scrollbar-track-gray-800" suppressHydrationWarning={true} >
-
+            <body className="scrollable">
                 <TopLoader
                     color={`var(--primary)`}
                     easing="ease"
@@ -36,13 +35,7 @@ export default function RootLayout({
                     speed={200}
                 />
 
-                <Providers>
-                    <Sidebar />
-                    <main className="flex-auto min-w-0 mt-6 md:mt-0 flex flex-col px-2 md:px-0">
-                        <Breadcrumbs />
-                        {children}
-                    </main>
-                </Providers>
+                <Providers>{children}</Providers>
             </body>
         </html>
     )

@@ -1,5 +1,5 @@
 import type { Metadata } from 'next';
-import { H1, ProjectGroup } from '../../components';
+import { H1, ProjectGroup } from '@/components';
 
 export const metadata: Metadata = {
     title: 'Projects',
