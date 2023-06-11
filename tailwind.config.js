@@ -26,14 +26,29 @@ module.exports = {
                 },
             },
             colors: {
+                clear: 'var(--clear)',
+                border: 'var(--border)',
+                selection: {
+                    DEFAULT: 'var(--selection)',
+                    foreground: 'var(--selection-foreground)',
+                },
+
                 background: {
                     DEFAULT: 'var(--background)',
+                    monochrome: 'var(--background-monochrome)',
+                },
+                foreground: 'var(--foreground)',
+                base: {
+                    DEFAULT: 'var(--base)',
+                    foreground: 'var(--base-foreground)',
                 },
                 primary: {
                     DEFAULT: 'var(--primary)',
+                    foreground: 'var(--primary)',
                 },
-                error: {
-                    DEFAULT: 'var(--error)',
+                destructive: {
+                    DEFAULT: 'var(--destructive)',
+                    foreground: 'var(--destructive-foreground)',
                 },
             },
         },

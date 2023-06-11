@@ -9,15 +9,7 @@ import { Icon } from './icon';
 // TODO: Add animation with CSS or Framer Motion
 export function ScrollToTop({ className, threshold = 500 }: { className?: string; threshold?: number }) {
     const [isVisible, setIsVisible] = useState(false)
-
-    // const toggleVisibility = () => {
-    //     if (window.pageYOffset > 300) {
-    //         setIsVisible(true)
-    //     } else {
-    //         setIsVisible(false)
-    //     }
-    // }
-
+    
     const toggleVisibility = () => {
         if (window.scrollY > threshold) {
             setIsVisible(true)
@@ -47,7 +39,7 @@ export function ScrollToTop({ className, threshold = 500 }: { className?: string
             type="button"
             onClick={scrollToTop}
             className={cn(
-                "p-2 bg-neutral-200 dark:bg-neutral-800 rounded-full",
+                "btn btn-square mask mask-squircle",
                 isVisible ? 'opacity-100' : 'opacity-0',
                 className
             )}

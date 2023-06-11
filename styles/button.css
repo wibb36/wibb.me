@@ -1,0 +1,226 @@
+@layer base {
+    /* Button */
+    .btn {
+        /* Unstyled */
+        @apply inline-flex flex-shrink-0 cursor-pointer select-none flex-wrap items-center justify-center border-clear text-center transition duration-200 ease-in-out rounded-md scaleOnClick;
+
+        @apply h-12 px-4 text-sm min-h-[3rem];
+
+        /* disabled */
+        &-disabled,
+        &[disabled],
+        &:disabled {
+            @apply pointer-events-none;
+        }
+
+        /* shapes */
+        &-square {
+            @apply h-12 w-12 p-0;
+        }
+        &-circle {
+            @apply h-12 w-12 rounded-full p-0;
+        }
+
+        /* sizes */
+        &-xs {
+            @apply h-6 px-2 min-h-6;
+            font-size: 0.75rem;
+        }
+        &-sm {
+            @apply h-8 px-3 min-h-8;
+            font-size: 0.875rem;
+        }
+        &-md {
+            @apply h-12 px-4 min-h-[3rem];
+            font-size: 0.875rem;
+        }
+        &-lg {
+            @apply h-16 px-6 min-h-16;
+            font-size: 1.125rem;
+        }
+        &-wide {
+            @apply w-64;
+        }
+        &-block {
+            @apply w-full;
+        }
+
+        /* Styled */
+        @apply font-semibold no-underline gap-2;
+
+        &:active:hover,
+        &:active:focus {
+            animation: button-pop 0s ease-out;
+            transform: scale(1, 0.95);
+        }
+
+        /* default btn */
+        & {
+            @apply border-base bg-base text-base-foreground no-underline outline-base-foreground;
+            @media (hover: hover) {
+                &:hover {
+                    @apply border-base bg-base;
+                }
+            }
+            &-active {
+                @apply border-base bg-base;
+            }
+            &:focus-visible {
+                @apply outline outline-2 outline-offset-2;
+            }
+        }
+
+        /* brand colors */
+        &-primary {
+            @apply border-primary bg-primary;
+            @media (hover: hover) {
+                &:hover {
+                    @apply border-primary bg-primary;
+                }
+            }
+            &.btn-active {
+                @apply border-primary bg-primary;
+            }
+        }
+
+        /* glass */
+        &.glass {
+            @apply shadow-none outline-current;
+            @media (hover: hover) {
+                &:hover {
+                    --glass-opacity: 25%;
+                    --glass-border-opacity: 15%;
+                }
+            }
+            &.btn-active {
+                --glass-opacity: 25%;
+                --glass-border-opacity: 15%;
+            }
+        }
+
+        /* btn variants */
+        &-ghost {
+            @apply border border-clear bg-clear text-current shadow-none outline-current;
+            @media (hover: hover) {
+                &:hover {
+                    @apply border-opacity-0 bg-base bg-opacity-20;
+                }
+            }
+            &.btn-active {
+                @apply border-opacity-0 bg-base bg-opacity-20;
+            }
+        }
+        &-link {
+            @apply border-clear bg-clear text-primary underline shadow-none outline-current;
+            @media (hover: hover) {
+                &:hover {
+                    @apply border-clear bg-clear underline;
+                }
+            }
+            &.btn-active {
+                @apply border-clear bg-clear underline;
+            }
+        }
+
+        /* outline */
+        &-outline {
+            @apply border-current bg-clear shadow-none;
+
+            @media (hover: hover) {
+                &:hover {
+                    @apply border-neutral-600 bg-neutral-600 text-neutral-600;
+                }
+            }
+
+            &.btn-active {
+                @apply border-base0 bg-base text-neutral-600;
+            }
+
+            &.btn-primary {
+                @apply text-primary;
+                @media (hover: hover) {
+                    &:hover {
+                        @apply border-primary bg-primary text-primary;
+                    }
+                }
+                &.btn-active {
+                    @apply border-primary bg-primary text-primary;
+                }
+            }
+        }
+
+        /* disabled */
+        &-disabled,
+        &[disabled],
+        &:disabled {
+            @apply border-opacity-0 bg-neutral-900 bg-opacity-20 text-opacity-20;
+        }
+
+        @media (hover: hover) {
+            &-disabled:hover,
+            &[disabled]:hover,
+            &:disabled:hover {
+                @apply border-opacity-0 bg-neutral-900 bg-opacity-20 text-neutral-900 text-opacity-20;
+            }
+        }
+    }
+
+    /* group */
+    .btn-group {
+        /* Unstyled */
+        @apply inline-flex;
+        & > input[type='radio'].btn {
+            @apply appearance-none;
+        }
+        & > input[type='radio'].btn:before {
+            content: attr(data-title);
+        }
+
+        /* Styled */
+        & > input[type='radio']:checked.btn,
+        & > .btn-active {
+            @apply border-primary bg-primary;
+            &:focus-visible {
+                @apply outline outline-2 outline-primary;
+            }
+        }
+    }
+
+    /* radio input and checkbox as button */
+
+    /* Unstyled */
+    .btn:is(input[type='checkbox']),
+    .btn:is(input[type='radio']) {
+        @apply appearance-none;
+    }
+    .btn:is(input[type='checkbox']):after,
+    .btn:is(input[type='radio']):after {
+        @apply content-[attr(aria-label)];
+    }
+
+    /* styled */
+    .btn:is(input[type='checkbox']:checked),
+    .btn:is(input[type='radio']:checked) {
+        @apply border-primary bg-primary;
+        @media (hover: hover) {
+            &:hover {
+                @apply border-primary bg-primary;
+            }
+        }
+        &:focus-visible {
+            @apply outline-primary;
+        }
+    }
+
+    @keyframes button-pop {
+        0% {
+            transform: scale(1, 0.95);
+        }
+        40% {
+            transform: scale(1.02);
+        }
+        100% {
+            transform: scale(1);
+        }
+    }
+}

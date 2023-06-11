@@ -1,4 +1,4 @@
-import { Layout, type IconType, type NavItemProps } from '@/components';
+import { Layout, type NavItemProps } from '@/components';
 
 const navItems: NavItemProps = {
     '/': {

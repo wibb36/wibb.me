@@ -1,22 +1,55 @@
 @import 'tailwind.css';
+@import 'mask.css';
+@import 'swap.css';
 @import 'drawer.css';
+@import 'button.css';
 
 @layer base {
     :root {
         /* Your default theme */
-        --background: white;
+        --clear: transparent;
+        --border: #e5e5e5; /* neutral-200 */
+        
+        --selection: rgba(0, 253, 224, 0.105);
+        --selection-foreground: var(--primary);
+
+        --background: #fafafa;
+        --background-monochrome: white;
         --foreground: black;
 
-        --primary: #2cffd1cb;
+        --base: #e5e5e5; /* neutral-200 */
+        --base-foreground: #525252; /* neutral-600 */
+
+        --primary: #158f7a; /* old: #2cffd1cb */
+        --primary-foreground: #2cffd1cb;
+
+        --destructive: #ff3b30;
+        --destructive-foreground: ;
+
         --error: #ff2c2c;
     }
 
     .dark,
     [data-theme='dark'] {
+        --clear: transparent;
+        --border: #262626; /* neutral-800 */
+        
+        --selection: rgba(0, 253, 224, 0.105);
+        --selection-foreground: var(--primary);
+
         --background: #171717;
+        --background-monochrome: black;
         --foreground: white;
 
+        --base: #262626; /* neutral-800 */
+        --base-foreground: #a3a3a3; /* neutral-400 */
+
         --primary: #2cffd1cb;
+        --primary-foreground: #2cffd1cb;
+
+        --destructive: #ff453a;
+        --destructive-foreground: ;
+
         --error: #ff2c2c;
     }
 }
@@ -29,18 +62,24 @@
         min-width: 360px;
     }
 
+    body {
+        @apply scrollable;
+    }
+
+    .scaleOnClick {
+        @apply cursor-pointer duration-200 ease-in-out transform active:scale-[.98] transition-transform;
+    }
+
     .scrollable {
-        @apply overflow-y-scroll scrollbar scrollbar-thumb-primary dark:scrollbar-thumb-primary scrollbar-track-neutral-200 dark:scrollbar-track-neutral-800;
+        @apply overflow-y-scroll scrollbar scrollbar-thumb-primary scrollbar-track-base;
     }
 
     ::selection {
-        @apply text-[#158f7a] dark:text-primary;
-        background-color: rgba(0, 253, 224, 0.105);
-        /* color: rgba(44, 255, 209, 0.796); */
+        @apply text-selection-foreground bg-selection;
     }
 
     a {
-        @apply transition-all underline;
+        @apply transition-all underline scaleOnClick;
     }
 
     a:hover {
@@ -69,7 +108,7 @@
     }
 
     .prose a {
-        @apply transition-all decoration-neutral-400 dark:decoration-neutral-600 hover:decoration-[#158f7a] hover:dark:decoration-[#2cffd1cb] hover:decoration-dotted underline-offset-2 decoration-[0.1em];
+        @apply decoration-neutral-400 dark:decoration-neutral-600 hover:decoration-[#158f7a] hover:dark:decoration-[#2cffd1cb] hover:decoration-dotted underline-offset-2 decoration-[0.1em] scaleOnClick;
     }
 
     .prose .anchor:after {
@@ -128,6 +167,8 @@
     }
 
     .prose .tweet a {
+        @apply scaleOnClick;
+
         text-decoration: inherit;
         font-weight: inherit;
     }

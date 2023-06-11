@@ -7,7 +7,6 @@ export const metadata: Metadata = {
     description: 'Read my thoughts on software development, design, and more.',
 };
 
-
 export default function WritingPage() {
     return (
         <>

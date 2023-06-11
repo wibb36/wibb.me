@@ -23,7 +23,7 @@ export default function RootLayout({
             lang="en"
             className={wibb_font.variable}
         >
-            <body className="scrollable">
+            <body>
                 <TopLoader
                     color={`var(--primary)`}
                     easing="ease"
