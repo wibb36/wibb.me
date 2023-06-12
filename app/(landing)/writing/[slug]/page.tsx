@@ -67,7 +67,7 @@ export default async function BlogPost({ params }) {
         <section>
             <H1>{post.title}</H1>
             <div className="grid grid-cols-[auto_1fr_auto] items-center mt-4 mb-8 font-mono text-sm max-w-[702px]">
-                <time className="bg-neutral-100 dark:bg-neutral-800 rounded-md px-2 py-1 tracking-tighter font-bold text-neutral-500 dark:text-neutral-300">
+                <time className="bg-base rounded-md px-2 py-1 tracking-tighter font-bold text-base-foreground">
                     {post.publishedAt} · {Math.ceil(post.readingTime.minutes)} min read
                 </time>
                 <div className="h-[0.2em] bg-neutral-50 dark:bg-neutral-800 mx-2" />

@@ -11,8 +11,10 @@
     },
     "dependencies": {
         "@ducanh2912/next-pwa": "^8.6.0",
+        "@radix-ui/react-label": "^2.0.2",
         "@radix-ui/react-tooltip": "^1.0.6",
         "@vercel/og": "^0.5.7",
+        "class-variance-authority": "^0.6.0",
         "clsx": "^1.2.1",
         "contentlayer": "^0.3.3",
         "date-fns": "^2.30.0",

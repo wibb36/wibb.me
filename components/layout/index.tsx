@@ -10,6 +10,7 @@ import Drawer from './drawer'
 import Logo from '../logo';
 import { Tooltip } from '../tooltip'
 import { Icon, type IconType } from '../icon';
+import { Label } from '../label'
 import { ThemeSwitch } from '../theme-switch';
 import { ScrollToTop } from '../scroll-to-top'
 
@@ -136,12 +137,12 @@ export function Layout(props: LayoutProps) {
                 !top && 'shadow-md',
             )}>
 
-                <label
+                <Label
                     htmlFor="landing-drawer"
                     className="relative left-[-12px] btn btn-square btn-ghost mask mask-squircle"
                 >
                     <Icon name="bars" width={32} height={32} />
-                </label>
+                </Label>
 
             </header>
 
