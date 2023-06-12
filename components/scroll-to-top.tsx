@@ -1,6 +1,6 @@
 'use client'
 
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useCallback } from 'react'
 // import { motion, useAnimation, useScroll } from 'framer-motion';
 
 import { cn } from '@/lib/utils'
@@ -9,14 +9,14 @@ import { Icon } from './icon';
 // TODO: Add animation with CSS or Framer Motion
 export function ScrollToTop({ className, threshold = 500 }: { className?: string; threshold?: number }) {
     const [isVisible, setIsVisible] = useState(false)
-    
-    const toggleVisibility = () => {
+
+    const toggleVisibility = useCallback(() => {
         if (window.scrollY > threshold) {
             setIsVisible(true)
         } else {
             setIsVisible(false)
         }
-    }
+    }, [threshold])
 
     const scrollToTop = () => {
         window.scrollTo({
