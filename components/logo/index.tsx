@@ -2,7 +2,7 @@
 
 import Link, { LinkProps as NextLinkProps } from 'next/link';
 import Image from "next/image";
-import { name, avatar } from '../../lib';
+import { name, avatar } from '@/lib';
 
 interface LogoProps extends NextLinkProps {
     className?: string

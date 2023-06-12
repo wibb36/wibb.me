@@ -1,7 +1,7 @@
 import '@/styles/index.css'
 
 import localFont from 'next/font/local';
-import { TopLoader, Providers } from '../components';
+import { TopLoader, Providers } from '@/components';
 
 export { metadata } from './meta'
 
