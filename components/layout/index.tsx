@@ -149,7 +149,7 @@ export function Layout(props: LayoutProps) {
             <main className="flex flex-col p-6 sm:p-10 md:pt-20 md:px-8 lg:px-20 min-h-screen">
                 <Breadcrumbs />
 
-                <div className="fixed bottom-8 right-8 sm:hidden">
+                <div className="fixed bottom-8 right-8 sm:hidden z-50">
                     <ScrollToTop />
                 </div>
 

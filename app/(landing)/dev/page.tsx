@@ -19,11 +19,11 @@ export default function DeveloperPage() {
                 </h2>
 
                 <p className="my-5 text-neutral-800 dark:text-neutral-200">
-                    I build web & mobile apps using Next.js & Expo. Currently working on <Link href="/projects/unirepo" className="bg-clip-text bg-gradient-to-r from-red-500 via-orange-500 to-yellow-300 font-extrabold text-transparent"><b>Unirepo</b></Link>, a cross-platform starter and cli. I firmly believe that, by default, apps should be universally accessible, secure, capable of performing natively at 60+ FPS, and cost-effective to develop and maintain.
+                    I build web & mobile apps using Next.js & Expo. Currently working on <Link href="/projects/unirepo">Unirepo</Link>, a cross-platform starter and cli. I firmly believe that, by default, apps should be universally accessible, secure, capable of performing natively at 60+ FPS, and cost-effective to develop and maintain.
                 </p>
 
                 <p className="my-5 text-neutral-800 dark:text-neutral-200">
-                    Previously, I co-founded <a href="https://limitlesslane.com/" target="_blank" className="bg-clip-text bg-gradient-to-r from-blue-500 via-purple-500 to-indigo-500 font-extrabold text-transparent"><b>Limitlesslane</b></a> where I created and managed the web app & browser extensions with a user base of over 300,000 individuals.
+                    Previously, I co-founded <a href="https://limitlesslane.com/" target="_blank">Limitlesslane</a> where I created and managed the web app & browser extensions with a user base of over 300,000 individuals.
                 </p>
 
                 <div className="flex flex-col space-y-4 mt-8">
