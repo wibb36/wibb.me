@@ -9,7 +9,7 @@
         /* Your default theme */
         --clear: transparent;
         --border: #e5e5e5; /* neutral-200 */
-        
+
         --selection: rgba(0, 253, 224, 0.105);
         --selection-foreground: var(--primary);
 
@@ -33,7 +33,7 @@
     [data-theme='dark'] {
         --clear: transparent;
         --border: #262626; /* neutral-800 */
-        
+
         --selection: rgba(0, 253, 224, 0.105);
         --selection-foreground: var(--primary);
 

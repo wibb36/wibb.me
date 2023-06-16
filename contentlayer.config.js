@@ -65,6 +65,9 @@ export const Blog = defineDocumentType(() => ({
         isPublished: {
             type: 'boolean',
         },
+        tags: {
+            type: 'string',
+        },
     },
     computedFields,
 }))
