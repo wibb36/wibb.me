@@ -21,7 +21,7 @@ export const metadata: Metadata = {
         siteName: APP_CREATOR,
         images: [
             {
-                url: '/og.jpg',
+                url: '/og.png',
                 width: 1920,
                 height: 1080,
             },
@@ -47,7 +47,7 @@ export const metadata: Metadata = {
         // siteId: '',
         // creator: '@wibb36',
         // creatorId: '',
-        // image: 'https://wibb.me/og.jpg',
+        // image: 'https://wibb.me/og.png',
     },
     icons: {
         // icon: '',
